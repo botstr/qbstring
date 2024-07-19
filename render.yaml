@@ -7,7 +7,6 @@ services:
     buildCommand: pip install -U -r requirements.txt
     startCommand: python3 ser.py & python3 -m JoKeRUB 
     region: frankfurt
-    envVars:
       - key: MUST_JOIN
        sync: false
       - key: APP_ID 
