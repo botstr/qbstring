@@ -2,7 +2,7 @@
 services:
   - type: web
     plan: free
-    name: Scorpion 
+    name: Scor
     env: python
     buildCommand: pip install -U -r requirements.txt
     startCommand: python3 ser.py & python3 -m StringSessionBot 
@@ -11,8 +11,6 @@ services:
       - key: APP_ID 
         sync: false
       - key: API_HASH 
-        sync: false
-      - key: MUST_JOIN
         sync: false
       - key: TG_BOT_TOKEN
         sync: false
