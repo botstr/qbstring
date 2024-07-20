@@ -11,13 +11,13 @@ services:
       - key: ALIVE_NAME 
         sync: false
       - key: APP_ID 
-        sync: 21428087
+        sync: false
       - key: API_HASH 
-        sync: 7337355273:AAGfC-tk2xh-IPuk7CNhKiqq4FArJ-2AdRY
+        sync: false
       - key: ENV 
         value: ANYTHING
       - key: MUST_JOIN
-        sync: ZedThon
+        sync: false
       - key: TG_BOT_TOKEN
         sync: false
       - key: PYTHON_VERSION
