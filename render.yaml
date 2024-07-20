@@ -8,14 +8,16 @@ services:
     startCommand: python3 ser.py & python3 -m JoKeRUB 
     region: frankfurt
     envVars:
+      - key: ALIVE_NAME 
+        sync: false
       - key: APP_ID 
-        sync: false
+        sync: 21428087
       - key: API_HASH 
-        sync: false
+        sync: 7337355273:AAGfC-tk2xh-IPuk7CNhKiqq4FArJ-2AdRY
       - key: ENV 
         value: ANYTHING
       - key: MUST_JOIN
-        sync: false
+        sync: ZedThon
       - key: TG_BOT_TOKEN
         sync: false
       - key: PYTHON_VERSION
