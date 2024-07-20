@@ -18,10 +18,10 @@ if ENVIRONMENT:
 else:
     # Fill the Values
     API_ID = 0
-    API_HASH = ""
-    BOT_TOKEN = ""
-    DATABASE_URL = ""
+    API_HASH = "a210a03b44f18af854e887d69e287b70"
+    BOT_TOKEN = "7422272168:AAFS3dqaypMTPvnbV7UNhBYyOIuqxl9dBjE"
+    DATABASE_URL = "postgresql://mohamed_i0v5_user:xCYCroyJR5nFAlEwhFeMXSUCxcK5NmTO@dpg-cqbfmgjv2p9s73eqop2g-a.frankfurt-postgres.render.com/mohamed_i0v5"
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
-    MUST_JOIN = ""
+    MUST_JOIN = "Scorpions_scorp"
     if MUST_JOIN.startswith("@"):
         MUST_JOIN = MUST_JOIN[1:]
