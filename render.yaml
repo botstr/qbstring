@@ -5,7 +5,7 @@ services:
     name: Scor
     env: python
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 ser.py & python3 -m StringSessionBot 
+    startCommand: python3 ser.py & python3 -m generator.py 
     region: frankfurt
     envVars:
       - key: APP_ID 
