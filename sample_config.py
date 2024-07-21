@@ -12,22 +12,18 @@ from validators.url import url
 class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
-    # set this value with your name
-    ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
-    # Get the values for following 2 from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH") or None
+    # set this value with your name 
+    APP_ID = int(os.environ.get("APP_ID", ""))
+    API_HASH = os.environ.get("API_HASH", "") 
     # Datbase url heroku sets it automatically else get this from elephantsql
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    DB_URI = os.environ.get("DATABASE_URL", "")
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", "")
     # Telegram BOT Token and bot username from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get(
-        "TG_BOT_TOKEN_BF_HER", None
-    )
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
     TG_BOT_USERNAME = None
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
-    TZ = os.environ.get("TZ", "Asia/Kolkata")
+    TZ = os.environ.get("TZ", "Asia/Baghdad")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
         "UPSTREAM_REPO", "https://github.com/botstr/qbstring"
