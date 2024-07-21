@@ -13,14 +13,14 @@ class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
     # set this value with your name
-    APP_ID = int(os.environ.get("APP_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
+    APP_ID = int(os.environ.get("APP_ID", "27369207"))
+    API_HASH = os.environ.get("API_HASH", "f341f3566eb333995ca9de2eb0ae4cff")
     # Datbase url heroku sets it automatically else get this from elephantsql
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("DATABASE_URL", "postgresql://mohamed_i0v5_user:xCYCroyJR5nFAlEwhFeMXSUCxcK5NmTO@dpg-cqbfmgjv2p9s73eqop2g-a.frankfurt-postgres.render.com/mohamed_i0v5")
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", "")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1AZWarzoBu7RokrJXXF5DMvgPob6L4cZ6eh7mi3JN3bEzoDAn63l_nE1-G9twB4SgxTyDhnHIFXh7svBIXdPfSM6ppadtCfvBlIVB0-u8JFjC2JwNSEmoBw-Js7g9ofqohYEXXNQEXIOPqtcFVWAVQCFxVzkcCS1acCc4vv6YymtTpy6Pdl1mjICA0upYi0i5WG40qgrtA0y8uL1eK0VtA1lHjlWflNycGEEvRTndWsAIpPl356t4O_4k1WbwR5MIrkVG48XMV_Yc2QXvlJFVftuUVpsFsp0TEhbng5hIlreK1rvK4SVOJQi7grr8horbZcvzRYHTohP3MSb6cAEBQj3Ua2ozUEc=")
     # Telegram BOT Token and bot username from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7131779597:AAFpI0DQ973uLDJuQwYRlhoxmAWhDil4IqQ")
     TG_BOT_USERNAME = None
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Baghdad")
