@@ -20,7 +20,7 @@ class Data:
     # Home Button
     home_buttons = [
         [InlineKeyboardButton("بـدء انشـاء جلسـة البـوت", callback_data="generate")],
-        [InlineKeyboardButton(text=" رجــوع ", callback_data="home")]
+        [InlineKeyboardButton(text=" رجــوع ", callback_data="home")],
     ]
 
     generate_button = [
@@ -30,12 +30,10 @@ class Data:
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("بـدء انشـاء جلسـة البـوت", callback_data="generate")],
-        
         [
             InlineKeyboardButton("مسـاعدة", callback_data="help"),
-            InlineKeyboardButton("حول البوت", callback_data="about")
+            InlineKeyboardButton("حول البوت", callback_data="about"),
         ],
-        
     ]
 
     # Help Message

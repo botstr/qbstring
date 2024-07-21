@@ -1,10 +1,11 @@
 from sqlalchemy import Column, Integer
+
 from StringSessionBot.database import BASE, SESSION
 
 
 class Users(BASE):
     __tablename__ = "users"
-    __table_args__ = {'extend_existing': True}
+    __table_args__ = {"extend_existing": True}
     user_id = Column(Integer, primary_key=True)
 
     def __init__(self, user_id, channels=None):

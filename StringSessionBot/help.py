@@ -1,6 +1,7 @@
-from Data import Data
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
+
+from Data import Data
 
 
 # Help Message
@@ -9,5 +10,5 @@ async def _help(bot, msg):
     await bot.send_message(
         msg.chat.id,
         "**- كيفيـة استخـدام البــوت **\n" + Data.HELP,
-        reply_markup=InlineKeyboardMarkup(Data.home_buttons)
+        reply_markup=InlineKeyboardMarkup(Data.home_buttons),
     )

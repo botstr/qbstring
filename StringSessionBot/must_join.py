@@ -1,6 +1,7 @@
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
+from pyrogram.errors import ChatAdminRequired, ChatWriteForbidden, UserNotParticipant
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+
 from Config import MUST_JOIN
 
 
@@ -21,9 +22,9 @@ async def must_join_channel(bot: Client, msg: Message):
                 await msg.reply(
                     f"**- عليـك الاشتـراك بقنـاة السـورس** [𝙕𝙚𝙙𝙏𝙝𝙤𝙣]({link}) **لكي تستطيـع استخـدام البــوت** 🧸♥️",
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("اضغـط للاشتـراك", url=link)]
-                    ])
+                    reply_markup=InlineKeyboardMarkup(
+                        [[InlineKeyboardButton("اضغـط للاشتـراك", url=link)]]
+                    ),
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
