@@ -12,15 +12,15 @@ from validators.url import url
 class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
-    # set this value with your name 
+    # set this value with your name
     APP_ID = int(os.environ.get("APP_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "") 
+    API_HASH = os.environ.get("API_HASH", "")
     # Datbase url heroku sets it automatically else get this from elephantsql
     DB_URI = os.environ.get("DATABASE_URL", "")
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     # Telegram BOT Token and bot username from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     TG_BOT_USERNAME = None
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Baghdad")
